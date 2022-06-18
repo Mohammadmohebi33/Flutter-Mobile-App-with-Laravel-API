@@ -19,7 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//Route::get('categories' , [CategoryController::class , 'index']);
-//Route::get('categories/{category}' , [CategoryController::class , 'show']);
 
-Route::resource('categories', \App\Http\Controllers\Api\CategoryController::class);
+Route::apiResource('categories', \App\Http\Controllers\Api\CategoryController::class);

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3d0a46c1-e962-4566-b2f6-a975b72cdcf7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter-api/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/flutter-api/app/Exceptions/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter-api/app/Http/Controllers/Api/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/flutter-api/app/Http/Controllers/Api/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter-api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/flutter-api/routes/api.php" afterDir="false" />
     </list>
@@ -158,7 +159,8 @@
       <updated>1655467985565</updated>
       <workItem from="1655467986699" duration="331000" />
       <workItem from="1655561614208" duration="627000" />
-      <workItem from="1655564845963" duration="4261000" />
+      <workItem from="1655564845963" duration="4896000" />
+      <workItem from="1655570917179" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1655468108131</created>
@@ -174,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655567897560</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="show categories">
+      <created>1655569380227</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655569380227</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +204,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="get categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="get categories" />
+    <MESSAGE value="show categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="show categories" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
