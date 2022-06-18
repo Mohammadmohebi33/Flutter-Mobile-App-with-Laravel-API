@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3d0a46c1-e962-4566-b2f6-a975b72cdcf7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter-api/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/flutter-api/app/Exceptions/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter-api/app/Http/Controllers/Api/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/flutter-api/app/Http/Controllers/Api/CategoryController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +159,7 @@
       <workItem from="1655467986699" duration="331000" />
       <workItem from="1655561614208" duration="627000" />
       <workItem from="1655564845963" duration="4896000" />
-      <workItem from="1655570917179" duration="2103000" />
+      <workItem from="1655570917179" duration="3253000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1655468108131</created>
@@ -188,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655571352113</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="store category">
+      <created>1655573287618</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655573287618</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +219,8 @@
     <MESSAGE value="get categories" />
     <MESSAGE value="show categories" />
     <MESSAGE value="error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="error handling" />
+    <MESSAGE value="store category" />
+    <option name="LAST_COMMIT_MESSAGE" value="store category" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
