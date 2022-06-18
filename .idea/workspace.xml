@@ -159,7 +159,7 @@
       <workItem from="1655561614208" duration="627000" />
       <workItem from="1655564845963" duration="4896000" />
       <workItem from="1655570917179" duration="3419000" />
-      <workItem from="1655577111238" duration="5278000" />
+      <workItem from="1655577111238" duration="6430000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1655468108131</created>
@@ -217,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655581505877</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="store transaction">
+      <created>1655582725382</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1655582725382</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +251,8 @@
     <MESSAGE value="update category" />
     <MESSAGE value="delete category" />
     <MESSAGE value="add transaction" />
-    <option name="LAST_COMMIT_MESSAGE" value="add transaction" />
+    <MESSAGE value="store transaction" />
+    <option name="LAST_COMMIT_MESSAGE" value="store transaction" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

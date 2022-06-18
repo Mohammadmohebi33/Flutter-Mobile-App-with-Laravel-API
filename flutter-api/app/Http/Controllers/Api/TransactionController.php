@@ -50,9 +50,10 @@ class TransactionController extends Controller
      * @param  \App\Models\Transaction  $transaction
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Transaction $transaction)
+    public function update(StoreTreansactionRequest $request, Transaction $transaction)
     {
-        //
+        $transaction->update($request->validated());
+        return new TransactionResource($transaction);
     }
 
     /**
@@ -63,6 +64,7 @@ class TransactionController extends Controller
      */
     public function destroy(Transaction $transaction)
     {
-        //
+        $transaction->delete();
+        return response()->noContent();
     }
 }
