@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3d0a46c1-e962-4566-b2f6-a975b72cdcf7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter-api/app/Http/Controllers/Api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/flutter-api/app/Http/Controllers/Api/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter-api/app/Http/Controllers/Api/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/flutter-api/app/Http/Controllers/Api/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter-api/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/flutter-api/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter-api/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/flutter-api/app/Models/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +170,7 @@
       <workItem from="1655564845963" duration="4896000" />
       <workItem from="1655570917179" duration="3419000" />
       <workItem from="1655577111238" duration="6859000" />
-      <workItem from="1655623142441" duration="3634000" />
+      <workItem from="1655623142441" duration="5205000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1655468108131</created>
@@ -247,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655627071750</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="auth">
+      <created>1655627430185</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655627430185</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
