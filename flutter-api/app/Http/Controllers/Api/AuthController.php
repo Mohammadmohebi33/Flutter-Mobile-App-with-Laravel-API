@@ -61,7 +61,11 @@ class AuthController extends Controller
        $user = User::query()->where('email' , $request->email)->first();
        if ($user){
            $user->tokens()->delete();
+           return response(['message' => 'delete ok']);
        }
-       return response()->noContent();
+       else{
+           return  response(['message' => "not delete"]);
+       }
+
     }
 }

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3d0a46c1-e962-4566-b2f6-a975b72cdcf7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter-api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/flutter-api/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter-api/app/Http/Controllers/Api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/flutter-api/app/Http/Controllers/Api/AuthController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +168,7 @@
       <workItem from="1655564845963" duration="4896000" />
       <workItem from="1655570917179" duration="3419000" />
       <workItem from="1655577111238" duration="6859000" />
-      <workItem from="1655623142441" duration="2994000" />
+      <workItem from="1655623142441" duration="3634000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1655468108131</created>
@@ -240,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655583707899</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="auth">
+      <created>1655627071749</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655627071750</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +276,8 @@
     <MESSAGE value="add transaction" />
     <MESSAGE value="store transaction" />
     <MESSAGE value="update and destroy transaction" />
-    <option name="LAST_COMMIT_MESSAGE" value="update and destroy transaction" />
+    <MESSAGE value="auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
