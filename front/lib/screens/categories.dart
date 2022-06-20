@@ -1,3 +1,6 @@
+
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
@@ -12,8 +15,6 @@ class Category{
   factory Category.formJson(Map<String , dynamic>json){
     return Category(id: json['id'], name: json['name']);
   }
-
-
 }
 
 
@@ -27,28 +28,52 @@ class Categories extends StatefulWidget {
 class _CategoriesState extends State<Categories> {
  
  late Future<List<Category>> futureCategory ; 
+ final _formKey = GlobalKey<FormState>();
+ late Category selectedCategory ;
+ final categorynameControlelr = TextEditingController(); 
   
   Future<List<Category>> fetchcategory() async {
     http.Response response = await http.get(Uri.parse('http://192.168.1.9:8000/api/categories'));
     List categories = convert.jsonDecode(response.body);
     return categories.map((categories) => Category.formJson(categories)).toList();
   }
-  
 
+  Future SaveCategory() async {
+    String url = 'http://192.168.1.9:8000/api/categories/'+selectedCategory.id.toString();
+    print(url);
+    await http.put(Uri.parse(url),
+
+    headers: {
+      HttpHeaders.contentTypeHeader : 'application/json' , 
+      HttpHeaders.acceptHeader : 'application/json',
+    },
+
+    body: convert.jsonEncode({'name' : categorynameControlelr.text}),
+    );
+
+  
+  setState(() {
+     Navigator.pop(context); 
+     Navigator.pushNamed(context, '/Categories');
+  });
+  
+  }
+  
   @override
   void initState() {
     super.initState();
     futureCategory = fetchcategory(); 
+    
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('categories'),
+        title:const Text('categories'),
       ),
       body: Container(
-        color: Theme.of(context).primaryColorDark,
+      //  color: Theme.of(context).primaryColorDark,
         child: Center(
          child: FutureBuilder<List<Category>>(
           future: futureCategory,
@@ -60,11 +85,42 @@ class _CategoriesState extends State<Categories> {
                   Category c = snapshot.data![index];
                   return ListTile(
                     title: Text(c.name),
+                    trailing: IconButton(
+                      icon: Icon(Icons.edit),
+                      onPressed: (){
+                        selectedCategory = c ; 
+                        categorynameControlelr.text = c.name;
+                        showModalBottomSheet(
+                          context: context,
+                           builder: (context){
+                              return Padding(
+                                padding: EdgeInsets.all(16),
+                                child: Form(
+                                  key: _formKey,
+                                  child: Column(
+                                    children: <Widget>[
+                                      TextFormField(
+                                        controller: categorynameControlelr,
+                                        decoration: InputDecoration(
+                                          border: OutlineInputBorder(),
+                                          labelText: 'category name'
+                                        ),
+                                      ),
+                                      ElevatedButton(
+                                         onPressed: () => SaveCategory(),
+                                         child: Text('save'))
+                                    ],
+                                  ),
+                                ),
+                              );
+                           });
+                      },
+                    ),
                   );
                  },
               );
             }
-            return CircularProgressIndicator(); 
+            return const CircularProgressIndicator(); 
           }
          ),
         ),
