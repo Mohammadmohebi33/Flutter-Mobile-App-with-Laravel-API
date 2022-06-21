@@ -39,6 +39,10 @@ class _CategoriesState extends State<Categories> {
   }
 
   Future SaveCategory() async {
+    final form = _formKey.currentState;
+    if(!form!.validate()){
+      return; 
+    }
     String url = 'http://192.168.1.9:8000/api/categories/'+selectedCategory.id.toString();
     print(url);
     await http.put(Uri.parse(url),
@@ -73,7 +77,6 @@ class _CategoriesState extends State<Categories> {
         title:const Text('categories'),
       ),
       body: Container(
-      //  color: Theme.of(context).primaryColorDark,
         child: Center(
          child: FutureBuilder<List<Category>>(
           future: futureCategory,
@@ -86,7 +89,7 @@ class _CategoriesState extends State<Categories> {
                   return ListTile(
                     title: Text(c.name),
                     trailing: IconButton(
-                      icon: Icon(Icons.edit),
+                      icon:const Icon(Icons.edit),
                       onPressed: (){
                         selectedCategory = c ; 
                         categorynameControlelr.text = c.name;
@@ -94,21 +97,28 @@ class _CategoriesState extends State<Categories> {
                           context: context,
                            builder: (context){
                               return Padding(
-                                padding: EdgeInsets.all(16),
+                                padding:const EdgeInsets.all(16),
                                 child: Form(
                                   key: _formKey,
                                   child: Column(
                                     children: <Widget>[
                                       TextFormField(
                                         controller: categorynameControlelr,
-                                        decoration: InputDecoration(
+                                        validator: (String? value){
+                                          if(value!.isEmpty){
+                                            return 'Enter category name'; 
+                                          }
+                                          return null;                                          
+
+                                        } ,
+                                        decoration:const InputDecoration(
                                           border: OutlineInputBorder(),
                                           labelText: 'category name'
                                         ),
                                       ),
                                       ElevatedButton(
                                          onPressed: () => SaveCategory(),
-                                         child: Text('save'))
+                                         child:const Text('save'))
                                     ],
                                   ),
                                 ),
