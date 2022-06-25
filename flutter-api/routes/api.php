@@ -28,5 +28,6 @@ Route::group(['middleware' => 'auth:sanctum'] ,  function (){
 
 Route::post('/register' , [\App\Http\Controllers\Api\AuthController::class , 'Register']);
 Route::post('/login' , [\App\Http\Controllers\Api\AuthController::class , 'login']);
+Route::apiResource('categories', \App\Http\Controllers\Api\CategoryController::class);
 
 

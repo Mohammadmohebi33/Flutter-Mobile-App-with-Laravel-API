@@ -23,13 +23,15 @@ class _CategoriesState extends State<Categories> {
   
 
 
+
+ 
   Future SaveCategory() async {
     final form = _formKey.currentState;
     if(!form!.validate()){
       return; 
     }
     apiService.UpdateCategory(selectedCategory.id.toString() , categorynameControlelr.text);
-    Navigator.pop(context); 
+    futureCategory = apiService.fetchcategory();
   }
   
   @override
@@ -48,6 +50,7 @@ class _CategoriesState extends State<Categories> {
         ),
         body: Container(
           child: Center(
+            
            child: FutureBuilder<List<Category>>(
             future: futureCategory,
             builder: (context,snapshot){
@@ -62,7 +65,7 @@ class _CategoriesState extends State<Categories> {
                         icon:const Icon(Icons.edit),
                         onPressed: (){
                           selectedCategory = c ; 
-                          categorynameControlelr.text = c.name;
+                            categorynameControlelr.text = c.name;
                           showModalBottomSheet(
                             isScrollControlled: true,
                             context: context,
@@ -91,7 +94,11 @@ class _CategoriesState extends State<Categories> {
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: <Widget>[
                                                ElevatedButton(
-                                           onPressed: () => SaveCategory(),
+                                           onPressed: () => 
+                                           setState(() {
+                                             SaveCategory();
+                                             Navigator.pop(context);
+                                           }),
                                            child:const Text('Save')),
                                               ElevatedButton(
                                                 style: ElevatedButton.styleFrom(
@@ -123,5 +130,3 @@ class _CategoriesState extends State<Categories> {
     );
   }
 }
-
-

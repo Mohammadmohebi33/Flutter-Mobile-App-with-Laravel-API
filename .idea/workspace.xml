@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d0a46c1-e962-4566-b2f6-a975b72cdcf7" name="Default Changelist" comment="" />
+    <list default="true" id="3d0a46c1-e962-4566-b2f6-a975b72cdcf7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter-api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/flutter-api/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/front/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/lib/screens/categories.dart" beforeDir="false" afterPath="$PROJECT_DIR$/front/lib/screens/categories.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/lib/services/api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/front/lib/services/api.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/front/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/front/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +155,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -166,6 +174,14 @@
       <workItem from="1655570917179" duration="3419000" />
       <workItem from="1655577111238" duration="6859000" />
       <workItem from="1655623142441" duration="6079000" />
+      <workItem from="1655656542472" duration="898000" />
+      <workItem from="1655666503438" duration="21000" />
+      <workItem from="1655677624685" duration="330000" />
+      <workItem from="1655705975488" duration="2531000" />
+      <workItem from="1655731665874" duration="26000" />
+      <workItem from="1655731732947" duration="25000" />
+      <workItem from="1655830272269" duration="1040000" />
+      <workItem from="1655892210025" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1655468108131</created>
